@@ -1,0 +1,19 @@
+{
+    "name": "matyx/sentry-nette",
+    "type": "library",
+    "require": {
+        "sentry/sentry": "^1.5",
+        "nette/di": "^2.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Macho",
+            "email": "matyxcz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "classmap": ["src/"]
+    }
+}
