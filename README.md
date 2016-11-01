@@ -15,5 +15,5 @@ extensions:
 
 
 sentry:
-	dsn: https://__REPLACE_WITH_TOKEN__
+	dsn: https://__REPLACE_WITH_SENTRY_PROJECT_DSN__ 
 ```
