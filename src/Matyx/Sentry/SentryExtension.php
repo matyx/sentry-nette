@@ -17,9 +17,13 @@ class SentryExtension extends CompilerExtension {
 			return;
 		}
 
+		if(!isset($config['ravenConfig'])) {
+			$config['ravenConfig'] = [];
+		}
+
 		$builder = $this->getContainerBuilder();
 
-		$builder->addDefinition($this->prefix('ravenClient'))->setClass(\Raven_Client::class, [$config['dsn']]);
+		$builder->addDefinition($this->prefix('ravenClient'))->setClass(\Raven_Client::class, [$config['dsn'], $config['ravenConfig']]);
 	}
 
 	public function afterCompile(Nette\PhpGenerator\ClassType $class) {

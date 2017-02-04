@@ -15,5 +15,7 @@ extensions:
 
 
 sentry:
-	dsn: https://__REPLACE_WITH_SENTRY_PROJECT_DSN__ 
+	dsn: https://__REPLACE_WITH_SENTRY_PROJECT_DSN__
+	ravenConfig: 
+		name: example.com
 ```
